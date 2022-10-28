@@ -1,7 +1,12 @@
 .dlt_button {
     border-radius: 10px;
     background-color: rgb(81, 123, 212);
-    color: lightblue;
+    color: whitesmoke;
+    cursor: pointer;
+    &.signout {
+        margin-top: 10px;
+        cursor: pointer;
+    }
 }
 .listItem {
     width: 50%!important;

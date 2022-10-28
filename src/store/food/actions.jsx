@@ -31,7 +31,11 @@ export const getFood = () => async (dispatch) => {
 
     dispatch(getFoodSuccess(result));
   } catch (err) {
-    console.warn(err);
+    console.log(err);
     dispatch(getFoodFailure(err.message));
   }
+};
+
+export const foo = () => {
+  throw new Error("newerr");
 };

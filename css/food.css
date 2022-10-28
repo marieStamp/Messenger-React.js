@@ -1,0 +1,11 @@
+.foodBtn {
+  background-color: #0e93bd;
+  color: #dae6ea;
+  border: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.foodList {
+  list-style-type: none;
+}

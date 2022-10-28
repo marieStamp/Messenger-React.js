@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React from "react";
 import { CircularProgress } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -7,6 +7,7 @@ import {
   selectFoodLoading,
 } from "../../store/food/selectors";
 import { getFood } from "../../store/food/actions";
+import "./food.scss";
 
 export const Food = () => {
   const dispatch = useDispatch();
@@ -18,9 +19,9 @@ export const Food = () => {
     dispatch(getFood());
   };
 
-  useEffect(() => {
-    requestFood();
-  }, []);
+  // useEffect(() => {
+  //   requestFood();
+  // }, []);
 
   return (
     <>
@@ -29,11 +30,15 @@ export const Food = () => {
         <CircularProgress />
       ) : (
         <>
-          <button onClick={requestFood}>REQUEST</button>
+          <button className="foodBtn" onClick={requestFood}>
+            REQUEST
+          </button>
           {!!error && <h4>ERROR: {error}</h4>}
           <ul>
             {food.map((fd) => (
-              <li key={fd.id}>{fd.name}</li>
+              <li className="foodList" key={fd.id}>
+                {fd.name}
+              </li>
             ))}
           </ul>
         </>

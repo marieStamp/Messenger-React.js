@@ -1,0 +1,14 @@
+.dlt_button {
+  border-radius: 10px;
+  background-color: #517bd4;
+  color: whitesmoke;
+}
+
+.dlt_button.signout {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.listItem {
+  width: 50% !important;
+}
