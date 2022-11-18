@@ -1,5 +1,7 @@
 Messenger-React.js - простейший мессенджер с регистрацией и возможностью добавлять чаты переписок, основанный на React и Firebase, а также с несколькими написанными мной тестами. Окончательный проект находится на ветке project.
 
+Посмотреть на Github Pages: https://mariestamp.github.io/Messenger-React.js/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
